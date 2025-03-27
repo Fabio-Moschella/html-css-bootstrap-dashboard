@@ -68,131 +68,100 @@
     </nav>
     <section>
       <div class="container">
-        <div class="row mt-3 mb-4">
-          <div><h2>Nuovo Libro</h2></div>
-          <div class="col-6">
-            <form>
-              <div class="mb-3">
-                <label
-                  for="exampleFormControlInput1"
-                  class="form-label fw-medium"
-                  >Nome Autore</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Inserici nome dell`Autore"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="col-6">
-            <form>
-              <div class="mb-3">
-                <label
-                  for="exampleFormControlInput1"
-                  class="form-label fw-medium"
-                  >Cognome Autore</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Inserici Cognome"
-                />
-              </div>
-            </form>
-          </div>
+        <div class="my-4">
+          <h2>Nuovo Libro</h2>
         </div>
-        <div class="row mt-3">
-          <div class="col">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label fw-medium"
-                  >Titolo</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Inserici il titolo del libro"
-                />
-                <div id="emailHelp" class="form-text">
-                  Titolo versione italiana
-                </div>
-              </div>
-            </form>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label fw-medium"
+              >Nome Autore</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Inserisci nome dell` autore"
+            />
           </div>
-        </div>
-        <div class="row my-3">
-          <div class="col-12 col-md-4 mb-3">
-            <p class="fw-medium">Genere</p>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Scegli il genere</option>
-              <option value="1">Giallo</option>
-              <option value="2">Fantasy</option>
-              <option value="3">Horror</option>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label fw-medium"
+              >Cognome Autore</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword4"
+              placeholder="Inserisci Cognome"
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label fw-medium"
+              >Titolo</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="Inserisci il titolo del libro"
+            />
+            <div id="emailHelp" class="form-text">Titolo versione Italiana</div>
+          </div>
+          <div class="col-md-4 fw-medium">
+            <label for="inputState" class="form-label">Genere</label>
+            <select id="inputState" class="form-select">
+              <option selected>Scegli il Genere</option>
+              <option>...</option>
             </select>
           </div>
-          <div class="col-12 col-md-4 mb-3">
-            <form>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Anno di Pubblicazione</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Inserisci l`anno"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="col-12 col-md-4 mb-3">
-            <form>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >ISBN#</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Inserisci il codice ISBN#"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="mb-4">
-          <hr />
-        </div>
 
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Note</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            placeholder="Inserisci eventuali note sul libro"
-          ></textarea>
-          <div class="my-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Disponibile anche in digitale</label
+          <div class="col-md-4">
+            <label for="inputCity" class="form-label fw-medium"
+              >Anno di pubblicazione</label
             >
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity"
+              placeholder="Inserisci l`anno"
+            />
           </div>
-          <a type="submit" class="btn btn-primary mb-3">Aggiungi libro</a>
-        </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="inputZip" class="form-label fw-medium">ISBN#</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputZip"
+              placeholder="Inserisci il codice ISBN#"
+            />
+          </div>
+          <div class="col-12 border-top border-secondary pt-3">
+            <div class="mb-3">
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label fw-medium"
+                >Note</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Inserisci eventuali note sul libro"
+              ></textarea>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Disponibile anche in digitale
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">
+              Aggiungi un libro
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   </body>
