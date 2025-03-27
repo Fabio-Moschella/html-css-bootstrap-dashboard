@@ -68,7 +68,7 @@
     </nav>
     <section>
       <div class="container">
-        <div class="row mt-3">
+        <div class="row mt-3 mb-4">
           <div><h2>Nuovo Libro</h2></div>
           <div class="col-6">
             <form>
@@ -105,7 +105,7 @@
             </form>
           </div>
         </div>
-        <div class="row my-3">
+        <div class="row mt-3">
           <div class="col">
             <form>
               <div class="mb-3">
@@ -127,7 +127,7 @@
           </div>
         </div>
         <div class="row my-3">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 mb-3">
             <p class="fw-medium">Genere</p>
             <select class="form-select" aria-label="Default select example">
               <option selected>Scegli il genere</option>
@@ -136,7 +136,7 @@
               <option value="3">Horror</option>
             </select>
           </div>
-          <div class="col-12 col-md-4 my-3">
+          <div class="col-12 col-md-4 mb-3">
             <form>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"
@@ -151,7 +151,7 @@
               </div>
             </form>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 mb-3">
             <form>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"
@@ -166,6 +166,32 @@
               </div>
             </form>
           </div>
+        </div>
+        <div class="mb-4">
+          <hr />
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Note</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Inserisci eventuali note sul libro"
+          ></textarea>
+          <div class="my-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Disponibile anche in digitale</label
+            >
+          </div>
+          <a type="submit" class="btn btn-primary mb-3">Aggiungi libro</a>
         </div>
       </div>
     </section>
