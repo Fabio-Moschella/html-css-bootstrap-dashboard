@@ -68,8 +68,74 @@
     </nav>
     <section>
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-8"></div>
+        <div class="row mt-3">
+          <div class="col-6">
+            <div><h2>Nuovo Libro</h2></div>
+            <form>
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlInput1"
+                  class="form-label fw-medium"
+                  >Nome Autore</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Inserici nome dell`Autore"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-6">
+            <form>
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlInput1"
+                  class="form-label fw-medium"
+                  >Cognome Autore</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Inserici Cognome"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label fw-medium"
+                  >Titolo</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Inserici il titolo del libro"
+                />
+                <div id="emailHelp" class="form-text">
+                  Titolo versione italiana
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col">
+            <p class="fw-medium">Genere</p>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Scegli il genere</option>
+              <option value="1">Giallo</option>
+              <option value="2">Fantasy</option>
+              <option value="3">Horror</option>
+            </select>
+          </div>
         </div>
       </div>
     </section>
