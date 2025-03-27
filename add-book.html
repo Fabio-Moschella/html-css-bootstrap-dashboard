@@ -69,8 +69,8 @@
     <section>
       <div class="container">
         <div class="row mt-3">
+          <div><h2>Nuovo Libro</h2></div>
           <div class="col-6">
-            <div><h2>Nuovo Libro</h2></div>
             <form>
               <div class="mb-3">
                 <label
@@ -127,7 +127,7 @@
           </div>
         </div>
         <div class="row my-3">
-          <div class="col">
+          <div class="col-12 col-md-4">
             <p class="fw-medium">Genere</p>
             <select class="form-select" aria-label="Default select example">
               <option selected>Scegli il genere</option>
@@ -135,6 +135,36 @@
               <option value="2">Fantasy</option>
               <option value="3">Horror</option>
             </select>
+          </div>
+          <div class="col-12 col-md-4 my-3">
+            <form>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Anno di Pubblicazione</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Inserisci l`anno"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-4">
+            <form>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >ISBN#</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Inserisci il codice ISBN#"
+                />
+              </div>
+            </form>
           </div>
         </div>
       </div>
